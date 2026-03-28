@@ -1,0 +1,35 @@
+const BOOKING_STATUS = {
+  PENDING: 'pending',
+  CONFIRMED: 'confirmed',
+  CANCELLED: 'cancelled',
+  EXPIRED: 'expired',
+};
+
+const SLOT_STATUS = {
+  AVAILABLE: 'available',
+  RESERVED: 'reserved',
+  BOOKED: 'booked',
+};
+
+const ROLES = {
+  USER: 'user',
+  ADMIN: 'admin',
+};
+
+const RESERVATION_TTL_SECONDS = 120;
+const RESERVATION_KEY_PREFIX = 'slot_reservation';
+const IDEMPOTENCY_TTL_SECONDS = 300;
+const BCRYPT_SALT_ROUNDS = 12;
+
+const CANCELLABLE_STATUSES = [BOOKING_STATUS.CONFIRMED, BOOKING_STATUS.PENDING];
+
+module.exports = {
+  BOOKING_STATUS,
+  SLOT_STATUS,
+  ROLES,
+  RESERVATION_TTL_SECONDS,
+  RESERVATION_KEY_PREFIX,
+  IDEMPOTENCY_TTL_SECONDS,
+  BCRYPT_SALT_ROUNDS,
+  CANCELLABLE_STATUSES,
+};
