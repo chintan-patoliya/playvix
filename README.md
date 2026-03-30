@@ -86,30 +86,6 @@ Users ──► AWS ALB ──┬─► Node.js Instance 1 ─┐
 
 ---
 
-## Project Structure
-
-```
-playvix/
-├── backend/           # Node.js API
-│   ├── src/
-│   │   ├── api/      # Routes, Controllers, Services, Repositories
-│   │   ├── config/   # DB, Redis, Socket.io, Passport
-│   │   └── utils/    # Helpers, Validations
-│   ├── migrations/   # MySQL schema
-│   └── README.md     # [Backend Docs](./backend/README.md)
-│
-├── frontend/          # React SPA
-│   ├── src/
-│   │   ├── components/  # React components
-│   │   ├── pages/       # Route pages
-│   │   └── api/         # Axios + Socket.io client
-│   └── README.md     # [Frontend Docs](./frontend/README.md)
-│
-└── README.md         # This file
-```
-
----
-
 ## Key Features
 
 ### Booking Flow
@@ -156,6 +132,3 @@ Socket.io broadcast    Auto-expiry if no confirm     Broadcast booked status
 | Logging | Winston |
 
 ---
-
-## License
-MIT
